@@ -4,10 +4,10 @@
 
 ErrorCode mergeSortedLists(Node list1, Node list2, Node* merged_out)
 {
-    if(list1 == NULL || list2 == NULL || merged_out == NULL) {
+    if(merged_out == NULL) {
         return NULL_ARGUMENT;
     }
-    if ((!(getListLength(list1)) || !(getListLength(list2)))) {
+    if ((!(getListLength(list1)) && !(getListLength(list2)))) {
         return EMPTY_LIST;
     }
     if ((!(isListSorted(list1)) || !(isListSorted(list2)))) {
