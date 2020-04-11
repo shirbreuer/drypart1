@@ -1,0 +1,3 @@
+C:/Users/shirb/Desktop/HW1_dry/build/CMakeFiles/rebuild_cache.dir
+C:/Users/shirb/Desktop/HW1_dry/build/CMakeFiles/catexe.dir
+C:/Users/shirb/Desktop/HW1_dry/build/CMakeFiles/edit_cache.dir

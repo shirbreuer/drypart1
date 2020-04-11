@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/shirb/Desktop/HW1_dry/cat.c
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+stdio.h
+-
+
