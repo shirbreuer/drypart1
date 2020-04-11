@@ -1,5 +1,5 @@
-#ifndef DRY
-#define DRY
+#ifndef DRY_H_
+#define DRY_H_
 
 typedef struct node_t {
 int x;

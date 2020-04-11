@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+
+
 ErrorCode mergeSortedLists(Node list1, Node list2, Node* merged_out)
 {
     if(merged_out == NULL) {
@@ -19,7 +21,7 @@ ErrorCode mergeSortedLists(Node list1, Node list2, Node* merged_out)
             merged_out = NULL;
             return MEMORY_ERROR;
         }
-
+    
     Node head = *merged_out;
     (*merged_out)=(*merged_out)->next;
 
@@ -55,13 +57,13 @@ Node* destroyList(Node ptr) {
     return NULL;
 }
 
-Node createNode(Node List) {
+Node createNode(Node list) {
 	Node ptr = malloc(sizeof(*ptr));
 	if(!ptr) {
 		return NULL;
 	}
-	ptr->x = List->x;
-    List=List->next;
+	ptr->x = list->x;
+    list=list->next;
 	ptr->next = NULL;
 	return ptr;
 }
