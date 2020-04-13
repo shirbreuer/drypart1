@@ -2,21 +2,22 @@
 #include <string.h>
 #include <assert.h>
 
-char *stringDuplicator(char *s, int times) { // Variable's name should be clear ( s => string)
- assert(!s); // will not work while NDEBUG is defined
+char *stringDuplicator(char *s, int times) { // 1. Variable's name should be clear ( s => string), 2. brackets should be in new line.
+ assert(!s); // A. can't use assert to validate input from user.
  assert(times > 0); // if times is non-positive, malloc will return NULL anyway
- int LEN = strlen(s); // Variable's name should be lowercase only (LEN => len)
+ int LEN = strlen(s); // 3. Variable's name should be lowercase only (LEN => len)
  char *out = malloc(LEN * times); // should allocate one more byte (for \0)
- assert(out); // assert cannot be used for malloc validating. (assert => if)
+ assert(out); // C. assert cannot be used for malloc validating. (assert => if)
  for (int i = 0; i < times; i++) {
  out = out + LEN; // will change the pointer, We don't want that.
  strcpy(out, s);
  }
  return out;
 }
-// Indentation problems (as shown bellow) - one for "block" and one for "for"
+// 4. Indentation problems
 
-
+// conventions problems are listed by numbers.
+// programming problems are listed by letters.
 
 
 // Fixed Version:
